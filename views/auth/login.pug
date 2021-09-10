@@ -1,0 +1,16 @@
+extends index
+
+block form
+	h4.pb-2 Login 
+
+	form(action="" method="post") 
+		.form-group.icon-group 
+			i.fa.fa-envelope.fa-2x
+			input#email(type="email" name="email" placeholder="Email" required).form-control
+		.form-group.icon-group 
+			i.fa.fa-at.fa-2x
+			input#password(type="password" name="password" placeholder="Password" required).form-control
+		button.btn.btn-primary.form-group Login
+
+block option
+	p.info Don't have an account?  <a href='/auth'>Register</a>	

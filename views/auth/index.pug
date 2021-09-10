@@ -1,0 +1,25 @@
+extends ../layout
+
+block stylesheets
+	link(rel="stylesheet" href="/css/auth.css")
+
+block content
+	main 
+		.container.mb-2
+			img(src="/img/devchallenges.svg" alt="")
+
+		.container
+			block form
+
+		.container
+			p.info.center or continue with these social profiles
+			.socials-row.py-2
+				span.social 
+					a(href="/auth/google") 
+						i.fab.fa-google.fa-2x
+				span.social 
+					i.fab.fa-github.fa-2x
+				span.social 
+					i.fab.fa-discord.fa-2x
+			.center
+				block option

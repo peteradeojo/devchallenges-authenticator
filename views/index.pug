@@ -1,0 +1,29 @@
+extends layout
+
+block stylesheets 
+	link(rel="stylesheet" href="/css/home.css")
+
+block content
+	header
+		.container 
+			.row
+				.col-6.p-1 
+					img(src="/img/devchallenges.svg" alt="" srcset="")
+				.col-6.p-1 
+					p.right= user.name
+					//- img.profile-pic(src=user.profilePic alt="" srcset="")
+					p 
+						a(href="/auth/logout") Log Out 
+
+		.container.py-4.center
+			h1 Personal Info
+			h4 Basic info, like your name and photo
+
+	main
+		.container
+			.row 
+				.col-6 
+					h3 Profile
+					p.info Some info may be visible to other people
+				.col-6.right 
+					button.btn.px-3.py-1 Edit

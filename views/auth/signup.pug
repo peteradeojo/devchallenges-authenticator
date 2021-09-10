@@ -1,0 +1,20 @@
+extends index
+
+block form
+	h3 Join thousands of learners from around the world 
+	p.py-2 Master web development by making real-life projects. There are multiple paths for you to choose
+
+	form(action="" method="post") 
+		.form-group.icon-group 
+			i.fa.fa-male.fa-2x
+			input#name(type="text" name="name" placeholder="Name" required).form-control
+		.form-group.icon-group 
+			i.fa.fa-envelope.fa-2x
+			input#email(type="email" name="email" placeholder="Email" required).form-control
+		.form-group.icon-group 
+			i.fa.fa-at.fa-2x
+			input#password(type="password" name="password" placeholder="Password" required).form-control
+		button.btn.btn-primary.form-group Start coding now
+
+block option
+	p.info Already a member?  <a href='/auth/login'>Login</a>
