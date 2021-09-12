@@ -78,6 +78,14 @@ h6 {
   margin-right: 6px;
 }
 
+.ml-1 {
+  margin-left: 6px;
+}
+
+.mr-1, .sm-mr-1 {
+  margin-right: 6px;
+}
+
 .m-1 {
   margin: 6px;
 }
@@ -97,6 +105,14 @@ h6 {
 
 .px-1 {
   padding-left: 6px;
+  padding-right: 6px;
+}
+
+.pl-1 {
+  padding-left: 6px;
+}
+
+.pr-1 {
   padding-right: 6px;
 }
 
@@ -122,6 +138,14 @@ h6 {
   margin-right: 12px;
 }
 
+.ml-2 {
+  margin-left: 12px;
+}
+
+.mr-2, .sm-mr-2 {
+  margin-right: 12px;
+}
+
 .m-2 {
   margin: 12px;
 }
@@ -141,6 +165,14 @@ h6 {
 
 .px-2 {
   padding-left: 12px;
+  padding-right: 12px;
+}
+
+.pl-2 {
+  padding-left: 12px;
+}
+
+.pr-2 {
   padding-right: 12px;
 }
 
@@ -166,6 +198,14 @@ h6 {
   margin-right: 18px;
 }
 
+.ml-3 {
+  margin-left: 18px;
+}
+
+.mr-3, .sm-mr-3 {
+  margin-right: 18px;
+}
+
 .m-3 {
   margin: 18px;
 }
@@ -185,6 +225,14 @@ h6 {
 
 .px-3 {
   padding-left: 18px;
+  padding-right: 18px;
+}
+
+.pl-3 {
+  padding-left: 18px;
+}
+
+.pr-3 {
   padding-right: 18px;
 }
 
@@ -210,6 +258,14 @@ h6 {
   margin-right: 24px;
 }
 
+.ml-4 {
+  margin-left: 24px;
+}
+
+.mr-4, .sm-mr-4 {
+  margin-right: 24px;
+}
+
 .m-4 {
   margin: 24px;
 }
@@ -229,6 +285,14 @@ h6 {
 
 .px-4 {
   padding-left: 24px;
+  padding-right: 24px;
+}
+
+.pl-4 {
+  padding-left: 24px;
+}
+
+.pr-4 {
   padding-right: 24px;
 }
 
@@ -254,6 +318,14 @@ h6 {
   margin-right: 30px;
 }
 
+.ml-5 {
+  margin-left: 30px;
+}
+
+.mr-5, .sm-mr-5 {
+  margin-right: 30px;
+}
+
 .m-5 {
   margin: 30px;
 }
@@ -273,6 +345,14 @@ h6 {
 
 .px-5 {
   padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pl-5 {
+  padding-left: 30px;
+}
+
+.pr-5 {
   padding-right: 30px;
 }
 
@@ -375,6 +455,16 @@ p.info {
 
 .col-12 {
   width: 100vw;
+}
+
+@media (max-width: 767px) {
+  [class*=sm-mr-] {
+    margin: 0;
+  }
+
+  .hide-sm {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

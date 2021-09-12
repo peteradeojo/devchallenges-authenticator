@@ -1,3 +1,62 @@
+main {
+  margin: auto;
+}
 
+#profile-sec {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+#profile-sec img {
+  width: 32px;
+  border-radius: 8px;
+}
+#profile-sec p {
+  line-height: 32px;
+}
+
+#profile-display-read-only .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+#profile-display-read-only .info label.title {
+  font-size: 1.5em;
+  font-family: "Noto Sans", sans-serif;
+  color: #bdbdbd;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: block;
+  width: 30%;
+}
+#profile-display-read-only .info .info-display {
+  width: 70%;
+  text-align: right;
+}
+#profile-display-read-only .info .info-display p {
+  line-height: 72px;
+  overflow: hidden;
+}
+#profile-display-read-only .info .info-display p.elipsed {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#profile-display-read-only .info .info-display img {
+  border-radius: 8px;
+  width: 72px;
+}
+
+@media (min-width: 767px) {
+  main {
+    width: 40%;
+    border: 1px solid #bdbdbd;
+    border-radius: 24px;
+    margin: 5vh auto;
+  }
+}
 
 /*# sourceMappingURL=home.css.map */

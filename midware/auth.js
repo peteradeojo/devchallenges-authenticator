@@ -10,7 +10,6 @@ module.exports = {
 		if (!req.isAuthenticated()) {
 			return res.redirect('/auth');
 		}
-		console.log('abeg');
 		return next();
 	},
 };

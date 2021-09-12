@@ -4,6 +4,7 @@ const passportLocalMongoose = require('passport-local-mongoose');
 const { Schema } = mongoose;
 
 const userSchema = new Schema({
+	subId: String,
 	email: {
 		type: String,
 		required: true,
@@ -11,7 +12,7 @@ const userSchema = new Schema({
 	},
 	name: String,
 	provider: String,
-	profilePic: String,
+	picture: String,
 });
 
 userSchema.plugin(passportLocalMongoose, {

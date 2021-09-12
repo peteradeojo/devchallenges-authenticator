@@ -61,6 +61,19 @@ module.exports = () => {
 			})(req, res);
 		});
 
+	router.get(
+		'/google',
+		passport.authenticate('google', { scope: ['profile', 'email'] })
+	);
+
+	router.get(
+		'/google/callback',
+		passport.authenticate('google', { failureRedirect: '/login' }),
+		(req, res) => {
+			res.redirect('/');
+		}
+	);
+
 	router.get('/logout', (req, res) => {
 		req.logOut();
 		res.redirect('/');
