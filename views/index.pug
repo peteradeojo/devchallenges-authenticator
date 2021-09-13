@@ -1,47 +1,35 @@
 extends layout
 
+
 block stylesheets 
 	link(rel="stylesheet" href="/css/home.css")
 
 block content
-	header
-		.container 
-			.row
-				.col-6.p-1 
-					a(href="/") 
-						img(src="/img/devchallenges.svg" alt="" srcset="")
-					a(href="/auth/logout") Log Out
-				.col-6.p-1#profile-sec
-					img.profile-pic.sm-mr-3(src=user.picture alt="" srcset="")
-					p.hide-sm= user.name
-
-		.container.py-4.center
-			h1 Personal Info
-			h4 Basic info, like your name and photo
+	.container.py-4.center
+		h1 Personal Info
+		h4 Basic info, like your name and photo
 
 	main
-		.container
+		#profile-display-read-only 
 			.row.mb-4 
 				.col-6 
 					h3 Profile
 					p.info Some info may be visible to other people
 				.col-6.right 
-					button.btn.px-3.py-1 Edit
-
-			#profile-display-read-only 
-				.info 
-					label.title Photo
-					.info-display
-						img(src=user.picture alt="")
-				.info 
-					label.title Name
-					.info-display
-						p= user.name
-				.info 
-					label.title Bio
-					.info-display
-						p.elipsed Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolore expedita tempora voluptatem dolor aut ut, iure veniam repellat porro harum quo laboriosam explicabo deserunt eos architecto. Ducimus, consequatur porro.
-				.info 
-					label.title Email
-					.info-display
-						p= user.email
+					a(href="/profile").btn.px-3.py-1 Edit
+			.info 
+				label.title Photo
+				.info-display
+					img(src=user.picture alt="")
+			.info 
+				label.title Name
+				.info-display
+					p= user.name
+			.info 
+				label.title Bio
+				.info-display
+					p.elipsed Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolore expedita tempora voluptatem dolor aut ut, iure veniam repellat porro harum quo laboriosam explicabo deserunt eos architecto. Ducimus, consequatur porro.
+			.info 
+				label.title Email
+				.info-display
+					p= user.email

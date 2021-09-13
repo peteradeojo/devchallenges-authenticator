@@ -10,6 +10,33 @@ html(lang="en")
 		block stylesheets
 		title Authenticator
 	body 
+		if user
+			- user.picture ||= "/img/default.jpg"
+			header
+				.container 
+					.row
+						.col-6.p-1 
+							//- a(href="/") 
+							img(src="/img/devchallenges.svg" alt="" srcset="")
+						.col-6.p-1#profile-sec
+
+							.dropdown
+								.title 
+									img.profile-pic.sm-mr-3(src=user.picture alt="" srcset="")
+									p.hide-sm= user.name
+									//- i.sm-none.fa.fa-caret-down
+								ul.dropdown-menu 
+									li.dropdown-item 
+										a(href="/profile"). 
+											<i class='fa fa-user-circle'></i> My Profile
+									li.dropdown-item 
+										a(href="/chat"). 
+											<i class='fas fa-user-friends'></i> Group Chat
+									li.drop-divider
+									li.dropdown-item
+										a(href="/auth/logout").text-red.
+											<i class='fa fa-sign-out-alt'></i> Logout
 		block content
 
 	block scripts
+	script(src="/js/main.js") 

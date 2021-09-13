@@ -1,0 +1,22 @@
+extends ../layout
+
+block stylesheets
+	link(rel="stylesheet" href="/css/home.css")
+	link(rel="stylesheet" href="/css/profile.css")
+
+block content
+	main 
+		.container.mb-2 
+			#back-link
+				a(href="/") <i class='fa fa-chevron-left mr-1'></i> Back
+
+		#profile-display-read-only
+			h3 Change Info
+			p.info Changes will be reflected to every services
+
+			.mt-4
+				form(action="" method="post" enctype="multipart/form-data")
+					.form-group
+						label(for="name") Name 
+						input#name.form-control(type="text" name="name")
+
