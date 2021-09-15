@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 const mongoStore = require('connect-mongo');
 const passport = require('passport');
+const fileUpload = require('express-fileupload');
 const debug = require('debug')('app:setup');
 
 module.exports = (app) => {
@@ -12,15 +13,11 @@ module.exports = (app) => {
 		require('dotenv').config();
 		app.use(require('morgan')('dev'));
 	}
-	app.use(express.json());
-	app.use(express.urlencoded({ extended: true }));
-
-	// Views and statics
-	app.set('view engine', 'pug');
-	app.set('views', path.join(__dirname, '..', 'views'));
-	app.use(express.static(path.join(__dirname, '..', 'public')));
 
 	// Arch config
+	app.use(express.urlencoded({ extended: false }));
+	app.use(express.json());
+	app.use(fileUpload({ useTempFiles: true }));
 	app.use(
 		session({
 			secret: process.env.SECRET,
@@ -30,6 +27,11 @@ module.exports = (app) => {
 		})
 	);
 	app.use(cookieParser());
+
+	// Views and statics
+	app.use(express.static(path.join(__dirname, '..', 'public')));
+	app.set('view engine', 'pug');
+	app.set('views', path.join(__dirname, '..', 'views'));
 
 	(async () => {
 		try {

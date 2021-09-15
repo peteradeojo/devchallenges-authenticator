@@ -28,8 +28,12 @@ block content
 			.info 
 				label.title Bio
 				.info-display
-					p.elipsed Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolore expedita tempora voluptatem dolor aut ut, iure veniam repellat porro harum quo laboriosam explicabo deserunt eos architecto. Ducimus, consequatur porro.
+					p.elipsed= user.bio || "No bio"
 			.info 
 				label.title Email
 				.info-display
 					p= user.email
+			.info 
+				label.title Phone
+				.info-display
+					p= user.phone

@@ -8,15 +8,36 @@ block content
 	main 
 		.container.mb-2 
 			#back-link
-				a(href="/") <i class='fa fa-chevron-left mr-1'></i> Back
+				p
+					a(href="/").link <i class='fa fa-chevron-left mr-1'></i> Back
 
 		#profile-display-read-only
 			h3 Change Info
 			p.info Changes will be reflected to every services
 
 			.mt-4
-				form(action="" method="post" enctype="multipart/form-data")
+				form#profile-form(action="" method="post" enctype="multipart/form-data")
 					.form-group
-						label(for="name") Name 
-						input#name.form-control(type="text" name="name")
+						label#picture-label(for="picture" style="background-image: url(" + user.picture + ")" tabindex="1").file-label
+							i.fa.fa-camera
+						input#picture(type="file" name="picture" accept=".jpg, .jpeg, .png" data-preview="#picture-label").hide.previewable
+					.form-group
+						label(for="name").mb-2 Name 
+						input#name.form-control.p-3(type="text" name="name" placeholder="Enter your name...")
+					.form-group
+						label(for="bio").mb-2 Bio 
+						textarea#bio(name="bio" rows="5" placeholder="Enter your bio...").p-3.form-control
+					.form-group
+						label(for="phone").mb-2 Phone 
+						input#phone.form-control.p-3(type="tel" name="phone" placeholder="Enter your phone...")
+					.form-group
+						label(for="email").mb-2 Email 
+						input#email.form-control.p-3(type="email" placeholder="Enter your email address..." value=user.email readonly)
+					//- .form-group
+						label(for="password") Password
+						input#password(type="password" name="password" placeholder="Enter your new password...").form-control.p-3
+					.form-group
+						button(type="submit").btn.btn-primary Save
 
+block scripts
+	script(src="/js/profile.js") 
