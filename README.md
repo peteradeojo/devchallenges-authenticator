@@ -44,9 +44,9 @@ Authenticator is an application to hold, display and share user profiles:
 - Where can I see your demo?
   - Demo available [here]()
 - What was your experience?
-  - It was quite chllenging organizing the application flow to make things easier for future development
+  - It was quite challenging organizing the application flow to make things easier for future development
 - What have you learned/improved?
-  - I have improved on my authentication skills using passportjs
+  - I have improved on my authentication skills using passportjs and Google OAuth
   - I have also improved on my frontend design skills
 <!-- - Your wisdom? :) -->
 
@@ -54,9 +54,8 @@ Authenticator is an application to hold, display and share user profiles:
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [ExpressJs](https://expressjs.com/)
+- [PassportJs](https://passportjs.org)
 
 ## Features
 
@@ -66,13 +65,11 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## How To Use
 
-<!-- Example: -->
-
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/peteradeojo/devchallenges-authenticator
 
 # Install dependencies
 $ npm install
@@ -91,6 +88,6 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [peteradeojo.github.io](https://{peteradeojo.github.io})
+- GitHub [@peteradeojo](https://{github.com/peteradeojo})
+- Twitter [@_peterstpatrick](https://{twitter.com/_peterstpatrick_})
