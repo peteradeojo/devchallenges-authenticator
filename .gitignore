@@ -4,3 +4,4 @@ src/*.scss
 **/tmp/**
 uploads
 .vscode
+.prettierrc
