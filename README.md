@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://z5bcb4f42-zd4035ea7-gtw.qovery.io/">
       Demo
     </a>
     <span> | </span>
@@ -37,17 +37,21 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![image](https://user-images.githubusercontent.com/60135915/133679508-5687ebf8-c372-4afe-bb4f-1b73db598b7b.png)
+
+![image](https://user-images.githubusercontent.com/60135915/133679628-7334e6f7-e067-437b-8da3-98712c965664.png)
 
 Authenticator is an application to hold, display and share user profiles:
 
 - Where can I see your demo?
-  - Demo available [here]()
+  - Demo available [here](https://z5bcb4f42-zd4035ea7-gtw.qovery.io/)
 - What was your experience?
   - It was quite challenging organizing the application flow to make things easier for future development
+  - I finally learned how to deploy succesfully to qovery.io
 - What have you learned/improved?
   - I have improved on my authentication skills using passportjs and Google OAuth
   - I have also improved on my frontend design skills
+  - Product management: in deploying to Qovery.io
 <!-- - Your wisdom? :) -->
 
 ### Built With
