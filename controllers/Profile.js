@@ -1,6 +1,6 @@
 const debug = require('debug')('app:Profile-controller');
 const fs = require('fs');
-const crypto = require('node:crypto');
+const crypto = require('crypto');
 const path = require('path');
 
 const User = require('../models/User');
