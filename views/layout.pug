@@ -11,7 +11,7 @@ html(lang="en")
 		title Authenticator
 	body 
 		if user
-			- user.picture ||= "/img/default.jpg"
+			- user.picture = !user.picture ? "/img/default.jpg": user.picture
 			header
 				.container 
 					.row
